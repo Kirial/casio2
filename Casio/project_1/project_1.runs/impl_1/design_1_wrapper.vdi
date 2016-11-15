@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 15 10:34:49 2016
+# Process ID: 25460
+# Current directory: C:/Projects/Casioproject/Casio/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Projects/Casioproject/Casio/project_1/project_1.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Projects/Casioproject/Casio/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 210.109 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_0/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_3/design_1_axi_gpio_0_0.edf:5830]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_0/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_3/design_1_axi_gpio_0_0.edf:5837]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_0/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_3/design_1_axi_gpio_0_0.edf:5844]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_0/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_3/design_1_axi_gpio_0_0.edf:5851]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_1/gpio_io_t[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_5/design_1_axi_gpio_1_0.edf:3853]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_1/gpio_io_t[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_5/design_1_axi_gpio_1_0.edf:3860]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_1/gpio_io_t[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_5/design_1_axi_gpio_1_0.edf:3867]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_1/gpio_io_t[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_5/design_1_axi_gpio_1_0.edf:3874]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_2/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_9/design_1_axi_gpio_2_0.edf:5830]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_2/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_9/design_1_axi_gpio_2_0.edf:5837]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_2/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_9/design_1_axi_gpio_2_0.edf:5844]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/axi_gpio_2/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Projects/Casioproject/project_1/project_1.runs/impl_1/.Xil/Vivado-3384-Thinkpad/dcp_9/design_1_axi_gpio_2_0.edf:5851]
+Parsing XDC File [C:/Projects/Casioproject/Casio/project_1/project_1.runs/impl_1/.Xil/Vivado-25460-Thinkpad/dcp/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Projects/Casioproject/Casio/project_1/project_1.runs/impl_1/.Xil/Vivado-25460-Thinkpad/dcp/design_1_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.513 . Memory (MB): peak = 479.770 ; gain = 0.551
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.514 . Memory (MB): peak = 479.770 ; gain = 0.551
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 479.770 ; gain = 269.660
+Command: write_bitstream -force -no_partial_bitfile design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 839.551 ; gain = 359.781
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 10:35:24 2016...

@@ -1,0 +1,219 @@
+17:29:03 INFO  : Registering command handlers for SDK TCF services
+17:29:03 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+17:29:05 INFO  : XSCT server has started successfully.
+17:29:06 INFO  : Successfully done setting XSCT server connection channel  
+17:29:06 INFO  : Processing command line option -hwspec C:/Projects/Casio/Casio.sdk/Casio_wrapper.hdf.
+17:29:06 INFO  : Successfully done setting SDK workspace  
+16:19:04 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casioproject\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+16:19:05 INFO  : XSCT server has started successfully.
+16:19:08 INFO  : Successfully done setting XSCT server connection channel  
+16:19:08 INFO  : Successfully done setting SDK workspace  
+16:19:09 INFO  : Registering command handlers for SDK TCF services
+16:19:10 INFO  : Processing command line option -hwspec C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper.hdf.
+17:13:14 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1478102897232,  Project:1477494739000
+17:13:14 INFO  : Project Casio_wrapper_hw_platform_1's source hardware specification located at C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:16:03 INFO  : Project Casio_wrapper_hw_platform_1's source hardware specification location will not be monitored anymore.
+19:17:09 INFO  : Registering command handlers for SDK TCF services
+19:17:10 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casioproject\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+19:17:12 INFO  : XSCT server has started successfully.
+19:17:12 INFO  : Successfully done setting XSCT server connection channel  
+19:17:12 INFO  : Processing command line option -hwspec C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper.hdf.
+19:17:12 INFO  : Successfully done setting SDK workspace  
+19:34:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+19:34:22 INFO  : FPGA configured successfully with bitstream "C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/Casio_wrapper.bit"
+19:38:06 INFO  : ps7_init is completed.
+19:38:06 INFO  : ps7_post_config is completed.
+19:38:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:40:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:40:06 ERROR : Port COM3 is already in use.
+19:41:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:41:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:41:42 ERROR : Unexpected error while opening JTAG UART: 
+java.lang.RuntimeException: Error while opening JTAG UART server: MDM Uart NOT Present in the System
+Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.startJTAGUARTServer(TM.java:951)
+	at com.xilinx.sdk.debug.core.internal.comm.JTAGUARTStreamsProxy.<init>(JTAGUARTStreamsProxy.java:32)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.createStreamsProxy(RemoteProcess.java:164)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.<init>(RemoteProcess.java:65)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:778)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+19:43:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:43:43 ERROR : Unexpected error while opening JTAG UART: 
+java.lang.RuntimeException: Error while opening JTAG UART server: MDM Uart NOT Present in the System
+Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.startJTAGUARTServer(TM.java:951)
+	at com.xilinx.sdk.debug.core.internal.comm.JTAGUARTStreamsProxy.<init>(JTAGUARTStreamsProxy.java:32)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.createStreamsProxy(RemoteProcess.java:164)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.<init>(RemoteProcess.java:65)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:91)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+19:43:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:44:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:44:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:44:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:46:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:46:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:46:58 ERROR : Port COM3 is already in use.
+19:49:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:49:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+19:49:34 INFO  : FPGA configured successfully with bitstream "C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/Casio_wrapper.bit"
+19:49:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:15:02 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:15:29 INFO  : Registering command handlers for SDK TCF services
+21:15:29 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casioproject\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+21:15:32 INFO  : XSCT server has started successfully.
+21:15:34 INFO  : Successfully done setting XSCT server connection channel  
+21:15:34 INFO  : Processing command line option -hwspec C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper.hdf.
+21:15:34 INFO  : Successfully done setting SDK workspace  
+21:15:34 INFO  : Checking for hwspec changes in the project Casio_wrapper_hw_platform_2.
+21:26:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:26:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:26:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+21:26:36 INFO  : FPGA configured successfully with bitstream "C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/Casio_wrapper.bit"
+21:27:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:28:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+21:28:37 INFO  : 'fpga -state' command is executed.
+21:28:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:28:38 INFO  : Jtag cable 'Digilent Zybo 210279574526A' is selected.
+21:28:38 INFO  : 'jtag frequency' command is executed.
+21:28:38 INFO  : Sourcing of 'C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:28:38 INFO  : Context for 'APU' is selected.
+21:28:38 INFO  : Hardware design information is loaded from 'C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/system.hdf'.
+21:28:38 INFO  : Context for 'APU' is selected.
+21:28:38 INFO  : 'stop' command is executed.
+21:28:43 ERROR : Memory read error at 0xF8F00208. Debug context is claimed by another client
+21:28:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574526A"} -index 0
+loadhw C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574526A"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+21:28:48 INFO  : Memory regions updated for context APU
+21:29:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+21:29:09 INFO  : 'fpga -state' command is executed.
+21:29:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:29:10 INFO  : Jtag cable 'Digilent Zybo 210279574526A' is selected.
+21:29:10 INFO  : 'jtag frequency' command is executed.
+21:29:10 INFO  : Sourcing of 'C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:29:10 INFO  : Context for 'APU' is selected.
+21:29:10 INFO  : Hardware design information is loaded from 'C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/system.hdf'.
+21:29:10 INFO  : Context for 'APU' is selected.
+21:29:10 INFO  : 'stop' command is executed.
+21:29:16 INFO  : 'ps7_init' command is executed.
+21:29:16 INFO  : 'ps7_post_config' command is executed.
+21:29:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:29:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:29:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:29:18 INFO  : The application 'C:/Projects/Casioproject/Casio/Casio.sdk/LED_Test/Debug/LED_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:29:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574526A"} -index 0
+loadhw C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574526A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574526A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574526A"} -index 0
+dow C:/Projects/Casioproject/Casio/Casio.sdk/LED_Test/Debug/LED_Test.elf
+----------------End of Script----------------
+
+21:29:18 INFO  : Memory regions updated for context APU
+21:29:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:29:19 INFO  : 'con' command is executed.
+21:29:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574526A"} -index 0
+con
+----------------End of Script----------------
+
+21:29:19 INFO  : Launch script is exported to file 'C:\Projects\Casioproject\Casio\Casio.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_led_test.elf_on_local.tcl'
+21:30:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:30:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+21:30:23 INFO  : FPGA configured successfully with bitstream "C:/Projects/Casioproject/Casio/Casio.sdk/Casio_wrapper_hw_platform_0/Casio_wrapper.bit"
+21:30:44 INFO  : Disconnected from the channel tcfchan#1.
+21:30:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:31:37 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:50:12 INFO  : Registering command handlers for SDK TCF services
+22:50:13 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casioproject\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+22:50:15 INFO  : XSCT server has started successfully.
+22:50:15 INFO  : Successfully done setting XSCT server connection channel  
+22:50:15 INFO  : Successfully done setting SDK workspace  
+22:50:15 INFO  : Processing command line option -hwspec C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper.hdf.
+22:52:18 INFO  : Registering command handlers for SDK TCF services
+22:52:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casioproject\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+22:52:20 INFO  : XSCT server has started successfully.
+22:52:21 INFO  : Successfully done setting XSCT server connection channel  
+22:52:21 INFO  : Processing command line option -hwspec C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper.hdf.
+22:52:21 INFO  : Successfully done setting SDK workspace  
+22:54:22 INFO  : Registering command handlers for SDK TCF services
+22:54:22 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casioproject\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+22:54:23 INFO  : XSCT server has started successfully.
+22:54:23 INFO  : Successfully done setting XSCT server connection channel  
+22:54:24 INFO  : Successfully done setting SDK workspace  
+22:54:24 INFO  : Processing command line option -hwspec C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper.hdf.
+22:59:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:59:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+22:59:05 INFO  : FPGA configured successfully with bitstream "C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper_hw_platform_0/Casio_Design_wrapper.bit"
+22:59:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:00:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:00:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:02:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:02:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+23:02:55 INFO  : FPGA configured successfully with bitstream "C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper_hw_platform_0/Casio_Design_wrapper.bit"
+23:03:03 INFO  : ps7_init is completed.
+23:03:04 INFO  : ps7_post_config is completed.
+23:03:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:04:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:24:45 INFO  : Registering command handlers for SDK TCF services
+23:24:45 INFO  : Launching XSCT server: xsct.bat -interactive C:\Projects\Casioproject\Casio\Casio.sdk\temp_xsdb_launch_script.tcl
+23:24:47 INFO  : XSCT server has started successfully.
+23:24:47 INFO  : Successfully done setting XSCT server connection channel  
+23:24:47 INFO  : Successfully done setting SDK workspace  
+23:24:47 INFO  : Processing command line option -hwspec C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper.hdf.
+23:24:47 INFO  : Checking for hwspec changes in the project Casio_Design_wrapper_hw_platform_0.
+23:24:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1478124747374,  Project:1478123170209
+23:24:49 INFO  : The hardware specification for project 'Casio_Design_wrapper_hw_platform_0' is different from C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper.hdf.
+23:24:50 INFO  : Copied contents of C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper.hdf into \Casio_Design_wrapper_hw_platform_0\system.hdf.
+23:24:54 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:24:56 INFO  : 
+23:24:57 INFO  : Updating hardware inferred compiler options for Interrup_counter.
+23:24:57 INFO  : Clearing existing target manager status.
+23:29:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:29:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574526A" && level==0} -index 1' command is executed.
+23:29:51 INFO  : FPGA configured successfully with bitstream "C:/Projects/Casioproject/Casio/Casio.sdk/Casio_Design_wrapper_hw_platform_0/Casio_Design_wrapper.bit"
+23:32:12 INFO  : ps7_init is completed.
+23:32:12 INFO  : ps7_post_config is completed.
+23:32:13 INFO  : Processor reset is completed for ps7_cortexa9_0

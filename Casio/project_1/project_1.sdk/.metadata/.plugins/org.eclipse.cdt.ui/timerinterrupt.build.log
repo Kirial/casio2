@@ -1,0 +1,41 @@
+17:24:07 **** Auto Build of configuration Debug for project timerinterrupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interrupt_counter_tut_2D_fixed.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_counter_tut_2D_fixed.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timerinterrupt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interrupt_counter_tut_2D_fixed.d" -MT"src/interrupt_counter_tut_2D_fixed.o" -o "src/interrupt_counter_tut_2D_fixed.o" "../src/interrupt_counter_tut_2D_fixed.c"
+../src/interrupt_counter_tut_2D_fixed.c: In function 'BTN_Intr_Handler':
+../src/interrupt_counter_tut_2D_fixed.c:130:2: warning: implicit declaration of function 'buttonInterrupt' [-Wimplicit-function-declaration]
+  buttonInterrupt(btn_value);
+  ^
+../src/interrupt_counter_tut_2D_fixed.c: In function 'TMR_Intr_Handler':
+../src/interrupt_counter_tut_2D_fixed.c:165:2: warning: implicit declaration of function 'timeInterrupt' [-Wimplicit-function-declaration]
+  timeInterrupt();
+  ^
+../src/interrupt_counter_tut_2D_fixed.c:168:13: warning: unused variable 'tmr_count' [-Wunused-variable]
+  static int tmr_count;
+             ^
+../src/interrupt_counter_tut_2D_fixed.c:167:9: warning: unused variable 'duration' [-Wunused-variable]
+  double duration;
+         ^
+../src/interrupt_counter_tut_2D_fixed.c: In function 'main':
+../src/interrupt_counter_tut_2D_fixed.c:254:3: warning: implicit declaration of function 'this_main' [-Wimplicit-function-declaration]
+   this_main();
+   ^
+'Finished building: ../src/interrupt_counter_tut_2D_fixed.c'
+' '
+'Building target: timerinterrupt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timerinterrupt_bsp/ps7_cortexa9_0/lib -o "timerinterrupt.elf"  ./src/interrupt_counter_tut_2D_fixed.o ./src/main_v2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timerinterrupt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timerinterrupt.elf  |tee "timerinterrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92744	   4596	  23968	 121308	  1d9dc	timerinterrupt.elf
+'Finished building: timerinterrupt.elf.size'
+' '
+
+17:24:09 Build Finished (took 2s.794ms)
+

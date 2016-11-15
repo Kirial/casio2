@@ -1,0 +1,13 @@
+10:36:22 **** Incremental Build of configuration Debug for project ur ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ur.elf  |tee "ur.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29108	   1532	  23192	  53832	   d248	ur.elf
+'Finished building: ur.elf.size'
+' '
+
+10:36:22 Build Finished (took 309ms)
+

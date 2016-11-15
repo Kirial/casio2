@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="Casio_Design_wrapper_hw_platform_0-device"/>
+	<item value="Casio_wrapper.bit" key="Casio_wrapper_hw_platform_0-bitFile"/>
+	<item value="Casio_Design_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="" key="Casio_wrapper_hw_platform_0-bmmFile"/>
+	<item value="" key="Casio_Design_wrapper_hw_platform_0-bmmFile"/>
+	<item value="false" key="Casio_Design_wrapper_hw_platform_0-partial_bit"/>
+	<item value="false" key="Casio_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Auto Detect" key="Casio_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="Casio_wrapper_hw_platform_0-target"/>
+	<item value="Casio_Design_wrapper.bit" key="Casio_Design_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="Casio_Design_wrapper_hw_platform_0-target"/>
+</section>

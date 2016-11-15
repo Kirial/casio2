@@ -1,0 +1,13 @@
+10:36:21 **** Incremental Build of configuration Debug for project hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hello.elf  |tee "hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22336	   1148	  22568	  46052	   b3e4	hello.elf
+'Finished building: hello.elf.size'
+' '
+
+10:36:21 Build Finished (took 309ms)
+

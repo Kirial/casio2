@@ -1,0 +1,3 @@
+Gpio 0 BTN
+Gpio 1 LED
+Gpio 2 SW

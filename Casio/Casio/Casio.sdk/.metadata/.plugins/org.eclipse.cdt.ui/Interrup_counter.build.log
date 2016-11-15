@@ -1,0 +1,8 @@
+23:03:02 **** Incremental Build of configuration Debug for project Interrup_counter ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.
+
+23:03:03 Build Finished (took 203ms)
+
