@@ -16,10 +16,13 @@
 const int programs = 5; // Amount of
 int programMode = 0; // 1 - Time, 2 - Stopwatch, 3 - Set Alarm, 4 - Set Time, 5 - Alarming
 int newProgramMode = 0;
-int buttonPressed;
+int previousButtonPressed = 0;
+int buttonPressedTime = 0;
+int boost = 1;
 
 // TIME
 int timer = 0;
+int milliseconds = 0;
 int seconds = 0;
 int minutes = 0;
 int hours = 0;
@@ -94,7 +97,7 @@ char asciiDigits[10][7][5] = {
     {'&',' ',' ','&','&'},
     {' ','&','&','&',' '}
   },{
-    {' ',' ','&','&',' '},
+    {' ',' ',' ','&',' '},
     {' ',' ','&','&',' '},
     {' ','&','&','&',' '},
     {' ',' ','&','&',' '},
@@ -118,7 +121,7 @@ char asciiDigits[10][7][5] = {
     {'&',' ',' ','&','&'},
     {' ','&','&','&',' '}
   },{
-    {' ','&','&','&',' '},
+    {' ',' ','&','&',' '},
     {' ','&','&','&',' '},
     {'&',' ','&','&',' '},
     {'&',' ','&','&',' '},
@@ -233,6 +236,18 @@ void buttonInterrupt(int button) {
     if(newProgramMode == programs) newProgramMode = 1;
     // printf("New Program Mode: %i\n\r", newProgramMode);
   }
+
+  if(button == buttonB && button == previousButtonPressed) {
+    buttonPressedTime++;
+    if(buttonPressedTime < 2) {
+      boost = 5;
+    }
+  } else {
+    boost = 1;
+    buttonPressedTime = 0;
+  }
+
+  previousButtonPressed = button;
 
   updateProgram(button);
   updateDisplay();
@@ -354,18 +369,18 @@ void updateProgram(int input) {
 
       // Add hour
       if(setAlarmMode == 1 && input == buttonB) {
-        alarmTime += 3600;
+        alarmTime += 3600 * boost;
         if(alarmTime > 86399) alarmTime -= 86400;
       }
 
       if(setAlarmMode == 2 && input == buttonB) {
-        alarmTime += 60;
+        alarmTime += 60 * boost;
         if((alarmMinutes / 60) > 59) {
           alarmTime -= 3660;
         }
       }
 
-      alarmHours = (alarmTime / 3600) % 60;
+      alarmHours = (alarmTime / 3600) % 24;
       alarmMinutes = (alarmTime / 60) % 60;
 
     break;
@@ -392,11 +407,14 @@ void updateProgram(int input) {
         break;
       }
 
-      if(setTimeMode == 1 && input == buttonB) timer += 3600;
-      else if(setTimeMode == 2 && input == buttonB) timer += 60;
-      else if(setTimeMode == 3 && input == buttonB) timer += 1;
+      if(setTimeMode == 1 && input == buttonB) timer += 3600 * boost;
+      else if(setTimeMode == 2 && input == buttonB) timer += 60 * boost;
+      else if(setTimeMode == 3 && input == buttonB) timer += 1 * boost;
 
-      hours = (timer / 3600) % 60;
+      if((timer / 60) % 60 == 0) timer -= 3600;
+      if(timer % 60 == 0) timer -= 60;
+
+      hours = (timer / 3600) % 24;
       minutes = (timer / 60) % 60;
       seconds = (timer) % 60;
 
